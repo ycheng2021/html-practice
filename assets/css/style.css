@@ -1,0 +1,18 @@
+.top-container {
+    display: flex;
+    gap: 10px;
+    margin: 20px 100px;
+    border: 1px solid grey;
+    padding:5px;
+}
+
+.yosemite-img {
+    width: 400px;
+    height: auto;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
