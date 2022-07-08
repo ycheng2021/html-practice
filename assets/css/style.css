@@ -1,18 +1,207 @@
+html {
+    min-width: 320px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
 .top-container {
-    display: flex;
-    gap: 10px;
-    margin: 20px 100px;
-    border: 1px solid grey;
-    padding:5px;
+  display: flex;
+  gap: 10px;
+  margin: 10px 100px;
+  border: 1px solid grey;
+  padding: 5px;
 }
 
 .yosemite-img {
-    width: 400px;
-    height: auto;
+  max-width: 35%;
+  object-fit: cover;
 }
 
 .description {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.bottom-container {
+  display: flex;
+  margin: 20px 100px;
+  gap: 40px;
+}
+
+.left-container {
+  width: 66%;
+  border: 1px solid grey;
+  padding: 5px 15px;
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-container {
+  width: 33%;
+  border: 1px solid grey;
+  background-color: lightgrey;
+  padding: 10px 15px;
+  height: max-content;
+}
+
+p {
+  margin: 0;
+}
+
+.navbar {
+  height: 30px;
+}
+
+.navbar-ul {
+  background-color: grey;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  list-style-type: none;
+  height: 30px;
+}
+
+.navbar-ul li {
+  color: white;
+  width: 80px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: grey;
+  color: white;
+  border: none;
+  margin: 5px 0;
+}
+
+.three-containers {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.athird {
+  width: 33%;
+  font-weight: bold;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px 0;
+  height: 45px;
+}
+
+.half {
+  width: 49%;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.flex {
+  display: flex;
+}
+
+.space {
+  gap: 5px;
+}
+
+.cc {
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.input {
+  border-radius: 0;
+  border: 1px solid lightgrey;
+  padding: 3px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  color: rgb(84, 172, 179);
+}
+
+.prices {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.border-top {
+  padding-top: 10px;
+  border-top: 1px solid black;
+}
+
+.spacing {
+  padding: 5px 0 10px;
+}
+
+.navbar-ul li:hover {
+  cursor: pointer;
+  background-color: green;
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1040px) {
+  .yosemite-img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .top-container {
     flex-direction: column;
+    text-align: center;
+  }
+  .three-containers {
+    flex-direction: column;
+  }
+  .athird {
+    width: 100%;
+  }
+  .bottom-container {
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 782px) {
+  .top-container,
+  .bottom-container {
+    margin: 10px;
+  }
+
+  .bottom-container {
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  .left-container,
+  .right-container {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
 }

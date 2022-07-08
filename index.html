@@ -5,31 +5,148 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML HW</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
   <body>
-    <div>
-      <div class="top-container">
-        <img
-          class="yosemite-img"
-          src="./assets/images/yosemite.jpg"
-          alt="Yosemite"
-        />
-        <div class="description">
-          <h3>Yosemite</h3>
-          <p>
-            Yosemite National Park is in California’s Sierra Nevada mountains.
-            It’s famed for its giant, ancient sequoia trees, and for Tunnel
-            View, the iconic vista of towering Bridalveil Fall and the granite
-            cliffs of El Capitan and Half Dome. In Yosemite Village are shops,
-            restaurants, lodging, the Yosemite Museum and the Ansel Adams
-            Gallery, with prints of the photographer’s renowned black-and-white
-            landscapes of the area.
-          </p>
+    <nav class="navbar">
+      <ul class="navbar-ul">
+        <li>Home</li>
+        <li>Search</li>
+        <li>Contact</li>
+        <li>Login</li>
+      </ul>
+    </nav>
+    <div class="top-container">
+      <img
+        class="yosemite-img"
+        src="./assets/images/yosemite.jpg"
+        alt="Yosemite"
+      />
+      <div class="description">
+        <h3>Yosemite</h3>
+        <p>
+          Yosemite National Park is in California’s Sierra Nevada mountains.
+          It’s famed for its giant, ancient sequoia trees, and for Tunnel View,
+          the iconic vista of towering Bridalveil Fall and the granite cliffs of
+          El Capitan and Half Dome. In Yosemite Village are shops, restaurants,
+          lodging, the Yosemite Museum and the Ansel Adams Gallery, with prints
+          of the photographer’s renowned black-and-white landscapes of the area.
+        </p>
+      </div>
+    </div>
+    <div class="bottom-container">
+      <div class="left-container">
+        <div class="three-containers">
+          <div class="athird">
+            <h3>Billing Address</h3>
+            <div class="vertical">
+              <span><i class="fa-solid fa-user icon"></i>Full Name</span>
+              <input class="input" type="text" placeholder="John M. Doe" />
+            </div>
+            <div class="vertical">
+              <span><i class="fa-solid fa-envelope icon"></i></i>Email</span>
+              <input class="input" type="text" placeholder="john@example.com" />
+            </div>
+            <div class="vertical">
+              <span><i class="fa-solid fa-address-card icon"></i>Address</span>
+              <input class="input" type="text" placeholder="830 Hillview" />
+            </div>
+            <div class="vertical">
+              <span><i class="fa-solid fa-landmark icon"></i>City</span>
+              <input class="input" type="text" placeholder="Milpitas" />
+            </div>
+            <div class="flex space">
+              <div class="vertical half">
+                <span>State</span>
+                <input class="input" type="text" placeholder="CA" />
+              </div>
+              <div class="vertical half">
+                <span>Zip</span>
+                <input class="input" type="text" placeholder="95035" />
+              </div>
+            </div>
+          </div>
+          <div class="athird">
+            <h3>Payment</h3>
+            <div class="vertical">
+              <span>Accepted Card</span>
+              <div class="flex">
+                <i class="fa-brands fa-cc-visa cc"></i><i class="fa-brands fa-cc-mastercard cc"></i><i class="fa-brands fa-cc-discover cc"></i>
+              </div>
+            </div>
+            <div class="vertical">
+              <span>Name On Card</span>
+              <input class="input" type="text" placeholder="John More Doe" />
+            </div>
+            <div class="vertical">
+              <span>Credit Card Number</span>
+              <input class="input" type="text" placeholder="1111-1111-1111-1111" />
+            </div>
+            <div class="vertical">
+              <span>Exp Month</span>
+              <select class="input" name="month" id="month">
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+              </select>
+            </div>
+            <div class="flex space">
+              <div class="vertical half">
+                <span>Exp Year</span>
+                <input class="input" type="text" placeholder="2018" />
+              </div>
+              <div class="vertical half">
+                <span>CVV</span>
+                <input class="input" type="text" placeholder="111" />
+              </div>
+            </div>
+          </div>
+          <div class="athird"></div>
+        </div>
+        <span><input type="checkbox">Shipping address same as billing</span>
+        <button class="submit-btn">Submit</button>
+      </div>
+      <div class="right-container">
+        <div class="flex space-between">
+          <span>Cart</span>
+          <span><i class="fa-solid fa-cart-shopping"></i>4</span>
+        </div>
+        <div class="flex space-between spacing">
+          <div class="items">
+            <span>Item 1</span>
+            <span>Item 2</span>
+            <span>Item 3</span>
+            <span>Item 4</span>
+          </div>
+          <div class="prices">
+            <span>$15</span>
+            <span>$5</span>
+            <span>$8</span>
+            <span>$2</span>
+          </div>
+        </div>
+        <div class="flex space-between border-top">
+          <span>Total</span>
+          <span>$30</span>
         </div>
       </div>
-      <div class="bottom-container"></div>
     </div>
   </body>
 </html>
